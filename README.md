@@ -92,16 +92,3 @@ If you find this code useful, please consider citing our paper:
 
 - [Hades](https://github.com/RUCAIBox/HADES)
 - [BeaverTails](https://github.com/PKU-Alignment/beavertails)
-
-## Examples of CS-DJ
-
-### GPT-4o-mini Example
-![model_figure](./figs/example-gpt-4o-mini.png)
-
----
-### GPT-4o Example
-![model_figure](./figs/example-gpt-4o.png)
-
----
-### GPT-4V Example
-![model_figure](./figs/example-gpt-4v.png)
