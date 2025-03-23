@@ -1,0 +1,10 @@
+tqdm
+openai
+argparse
+pillow == 9.5.0
+torch
+transformers 
+sentence-transformers
+accelerate>=0.26.0
+SentencePiece
+google-generativeai
