@@ -16,7 +16,7 @@ Multimodal Large Language Models (MLLMs) bridge the gap between visual and textu
 
 <div class="scrollable">
     <ul>
-      <li><strong>[2025, Feb 15]</strong>: &nbsp;🎉🎉  We've released <b>CS-DJ!</b> Check our <a href="https://arxiv.org/abs/2502.05957">paper</a> for more details.</li>
+      <li><strong>[2025, Feb 15]</strong>: &nbsp;🎉🎉  We've released <b>CS-DJ!</b> Check our <a href="https://arxiv.org/abs/2502.10794">paper</a> for more details.</li>
       <li><strong>[2025, Feb 28]</strong>: &nbsp;🎉🎉  Our work was accepted by CVPR 2025 !!!</li>
     </ul>
 </div>
