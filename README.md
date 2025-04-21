@@ -1,10 +1,6 @@
 
 # CS-DJ: Distraction is All You Need for Multimodal Large Language Model Jailbreaking
 
-<div align="center">
-  <a href="https://arxiv.org/abs/2502.10794"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper"></a>
-</div>
-
 
 ## Abstract
 
