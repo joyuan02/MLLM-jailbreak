@@ -80,11 +80,13 @@ python script/Gemini_infer.py
 
 If you find this code useful, please consider citing our paper:
  ```bibtex
-@article{yang2025distraction,
-  title={Distraction is All You Need for Multimodal Large Language Model Jailbreaking},
-  author={Yang, Zuopeng and Fan, Jiluan and Yan, Anli and Gao, Erdun and Lin, Xin and Li, Tao and Dong, Changyu and others},
-  journal={arXiv preprint arXiv:2502.10794},
-  year={2025}
+@InProceedings{Yang_2025_CVPR,
+    author    = {Yang, Zuopeng and Fan, Jiluan and Yan, Anli and Gao, Erdun and Lin, Xin and Li, Tao and Mo, Kanghua and Dong, Changyu},
+    title     = {Distraction is All You Need for Multimodal Large Language Model Jailbreaking},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {9467-9476}
 }
 ``` 
 
