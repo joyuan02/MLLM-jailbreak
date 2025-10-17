@@ -1,0 +1,404 @@
+{
+  "items": [
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1900
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2584
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2392
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2543
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2562
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1775
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 31
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2257
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2436
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 31
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1979
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2203
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2558
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2306
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2545
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2445
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 31
+      }
+    },
+    {
+      "flagged": true,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2555
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2188
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2201
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2010
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 40
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 31
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2242
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2414
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2154
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2365
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1585
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 40
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2424
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2592
+      }
+    },
+    {
+      "flagged": true,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 49
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 31
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2086
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2465
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1945
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2417
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2308
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2458
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2297
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2362
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 40
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1814
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 40
+      }
+    },
+    {
+      "flagged": true,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 49
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 1736
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2207
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2449
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2128
+      }
+    },
+    {
+      "flagged": false,
+      "model": "gpt-4o",
+      "meta": {
+        "reason": "heuristic_v1",
+        "len": 2128
+      }
+    }
+  ]
+}

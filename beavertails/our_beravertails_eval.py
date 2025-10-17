@@ -2,6 +2,7 @@ from moderation import QAModeration
 import argparse
 import json
 import os
+import torch
 
 # args.attack_result_dir = '/home/yzp/fjl/vision_jailbreak_explore/results/'
 
@@ -18,10 +19,13 @@ def evaluation(args):
         os.makedirs(os.path.join(args.eval_output_dir, args.strategy_name))
 
     model = QAModeration.from_pretrained(
-            'PKU-Alignment/beaver-dam-7b',
-            model_max_length=1000,
-            device_map='auto',
-        )
+         'PKU-Alignment/beaver-dam-7b',
+        model_max_length=1000,
+        device_map='auto',            # 自动把大头放进 GPU，不够就分片/离线
+        torch_dtype=torch.float16,    # 半精度，大幅降显存；40/30 系列都支持
+        low_cpu_mem_usage=True,       # 降低 CPU 内存峰值
+        offload_folder='./.hf_offload' # 不够时离线到该目录
+    )
 
     for obj_model in model_types:
             # if obj_model != 'gpt-4v' and obj_model != 'gpt-4o-mini':

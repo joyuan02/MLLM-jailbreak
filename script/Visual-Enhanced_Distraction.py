@@ -33,7 +33,7 @@ def main(args):
         max_distance_embedding_list = []
         selected_image_list = []
 
-        text_emb = model.encode(jailbreak_question, convert_to_tensor=True).to(device)
+        text_emb = model.encode(jailbreak_question, convert_to_tensor=True).to(device) #######
         max_distance_embedding_list.append(text_emb)
 
         for _ in range(15):

@@ -103,22 +103,17 @@ class Moderation(nn.Module):
         problem_type: ProblemType | None = None,
         device_map: str | dict[str, torch.device | str | int] | None = None,
         device: torch.device | str | int | None = None,
+        **from_pretrained_kwargs,   # 新增：透传任意额外参数
     ) -> Moderation:
-        """Initialize the moderation model."""
         model_name_or_path = os.path.expanduser(model_name_or_path)
-
         if device_map is not None and device is not None:
-            raise ValueError(
-                '`device_map` and `device` cannot be specified at the same time.',
-            )
+            raise ValueError('`device_map` and `device` cannot be specified at the same time.')
 
         if num_labels is not None and id2label is not None and len(id2label) != num_labels:
             logging.warning(
                 'You passed along `num_labels=%d` with an incompatible id to label map: %s. '
                 'The number of labels will be overwritten to %d.',
-                num_labels,
-                id2label,
-                len(id2label),
+                num_labels, id2label, len(id2label),
             )
             num_labels = len(id2label)
 
@@ -131,6 +126,9 @@ class Moderation(nn.Module):
             model_kwargs['problem_type'] = problem_type
         if device_map is not None:
             model_kwargs['device_map'] = device_map
+
+        # 关键：把额外参数合并进去（torch_dtype/low_cpu_mem_usage/offload_folder/…）
+        model_kwargs.update(from_pretrained_kwargs)
 
         model = AutoModelForSequenceClassification.from_pretrained(
             model_name_or_path,

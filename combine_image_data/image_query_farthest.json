@@ -1,0 +1,33 @@
+{
+  "query_image": ".\\llava_images\\GCC_train_001915824.jpg",
+  "emb_file": ".\\image_embeding\\map_seed_0_num_500.json",
+  "mode": "simple",
+  "topk": 5,
+  "results": [
+    {
+      "rank": 1,
+      "path": ".\\llava_images\\GCC_train_000498828.jpg",
+      "cos_sim": 0.021372206509113312
+    },
+    {
+      "rank": 2,
+      "path": ".\\llava_images\\GCC_train_002267761.jpg",
+      "cos_sim": 0.02336449734866619
+    },
+    {
+      "rank": 3,
+      "path": ".\\llava_images\\GCC_train_000005271.jpg",
+      "cos_sim": 0.034972093999385834
+    },
+    {
+      "rank": 4,
+      "path": ".\\llava_images\\GCC_train_000162171.jpg",
+      "cos_sim": 0.043419599533081055
+    },
+    {
+      "rank": 5,
+      "path": ".\\llava_images\\GCC_train_000719604.jpg",
+      "cos_sim": 0.045764368027448654
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "rank": 1,
+    "cosine_similarity": 0.03171476349234581,
+    "image_path": ".\\llava_images\\GCC_train_001915824.jpg"
+  },
+  {
+    "rank": 2,
+    "cosine_similarity": 0.17654842138290405,
+    "image_path": ".\\llava_images\\GCC_train_002427165.jpg"
+  },
+  {
+    "rank": 3,
+    "cosine_similarity": 0.19302257895469666,
+    "image_path": ".\\llava_images\\GCC_train_000162171.jpg"
+  },
+  {
+    "rank": 4,
+    "cosine_similarity": 0.21525011956691742,
+    "image_path": ".\\llava_images\\GCC_train_002081931.jpg"
+  },
+  {
+    "rank": 5,
+    "cosine_similarity": 0.22329381108283997,
+    "image_path": ".\\llava_images\\GCC_train_000028601.jpg"
+  }
+]
