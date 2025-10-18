@@ -1,96 +1,33 @@
 
-# CS-DJ: Distraction is All You Need for Multimodal Large Language Model Jailbreaking
-
-## 🔥 News
-
-<div class="scrollable">
-    <ul>
-      <li><strong>[2025, Feb 15]</strong>: We've released <b>CS-DJ!</b> Check our <a href="https://arxiv.org/abs/2502.10794">paper</a> for more details.</li>
-      <li><strong>[2025, Feb 28]</strong>: &nbsp;🎉🎉  Our work was accepted by CVPR 2025 !!!</li>
-      <li><strong>[2025, Apr 5]</strong>: &nbsp;🎉🎉🎉  Our work was selected as one of the highlights of CVPR 2025 !!!</li>
-    </ul>
-</div>
-<span id='table-of-contents'/>
-
-![model_figure](./figs/CS-DJ.png)
-
-## Abstract
-
-Multimodal Large Language Models (MLLMs) bridge the gap between visual and textual data, enabling a range of advanced applications. However, complex internal interactions among visual elements and their alignment with text can introduce vulnerabilities, which may be exploited to bypass safety mechanisms. To address this, we analyze the relationship between image content and task and find that the complexity of subimages, rather than their content, is key. Building on this insight, we propose the **Distraction Hypothesis**, followed by a novel framework called Contrasting Subimage Distraction Jailbreaking (**CS-DJ**), to achieve jailbreaking by disrupting MLLMs alignment through multi-level distraction strategies. CS-DJ consists of two components: structured distraction, achieved through query decomposition that induces a distributional shift by fragmenting harmful prompts into sub-queries, and visual-enhanced distraction, realized by constructing contrasting subimages to disrupt the interactions among visual elements within the model. This dual strategy disperses the model’s attention, reducing its ability to detect and mitigate harmful content. 
-
-
-
-
-
-## Preparation
-
-#### utilized Models 
-
-- Embedding Model: [clip-ViT-L-14](https://huggingface.co/sentence-transformers/clip-ViT-L-14)
-- Auxiliary Model: [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
-- Evaluation Model: [Beaver-Dam-7b](https://huggingface.co/PKU-Alignment/beaver-dam-7b)
-
-#### Image Library
-Download the [LLaVA-CC3M-Pretrain-595K](https://huggingface.co/datasets/liuhaotian/LLaVA-CC3M-Pretrain-595K) dataset and store images in the `./llava_images` directory.
-
-
-#### Installation Dependency
-The deployed Python environment is version 3.10.
-
-The required dependencies can be installed via pip:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-
-#### Set Up
-Configure the retrieval random  `seed` (e.g., `2025`), `image count` (e.g., `10000`), `object model` (`gpt-4o`, `gpt-4o-mini`, and `gpt-4-vision-preview` are supported), and `api_key` in the `config.py` file.
-
-#### GPT Series Jailbreaking Execution
-Execute this command:
-
-```bash
-bash run.sh
-```
-
-#### Evaluation
-Execute this command:
-
-```python
-python beavertails/our_beravertails_eval.py --strategy_name CS-DJ_best_method
-```
-
-#### Gemini Series Jailbreaking Execution
-First, set Gemini API key in script/Gemini_infer.py
-```python
-genai.configure(api_key='<Your_Gemini_API_KEY>')
-```
-
-Then, you can execute this command:
-
-```bash
-python script/Gemini_infer.py
-```
-
-**Tip: The file structure of the result of Gemini inference may be different from that of the result of GPT series inference. If you need to evaluate the results of Gemini, you may need to modify the file reading part of beavertails/our_beravertails_eval.py appropriately.**
-
-## Citation
-
-If you find this code useful, please consider citing our paper:
- ```bibtex
-@InProceedings{Yang_2025_CVPR,
-    author    = {Yang, Zuopeng and Fan, Jiluan and Yan, Anli and Gao, Erdun and Lin, Xin and Li, Tao and Mo, Kanghua and Dong, Changyu},
-    title     = {Distraction is All You Need for Multimodal Large Language Model Jailbreaking},
-    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
-    month     = {June},
-    year      = {2025},
-    pages     = {9467-9476}
-}
-``` 
-
-## Related Projects
-
-- [Hades](https://github.com/RUCAIBox/HADES)
-- [BeaverTails](https://github.com/PKU-Alignment/beavertails)
+.
+├─ script/                      # 所有可执行脚本（仅列出与本 README 相关的）
+│  ├─ main.py                   # 生成合成图（classic/texture）；写出 image_map 与结果
+│  ├─ eval_with_llamaguard_from_images.py   # 用“已生成合成图+LlamaGuard-3-Vision”做预/后审评测
+│
+├─ safety/                      # 安全模型适配
+│  ├─ llamaguard_vision.py      # Meta Llama-Guard-3-11B-Vision 推理包装（HF Transformers）
+│
+├─ config/                      # 统一的 argparse 参数解析等（CS_DJ_parser）
+│
+├─ instructions/                # 各类越狱指令 JSON（按类目分：Animal/Financial/Privacy/...）
+│
+├─ distraction_images/          # 合成图输出根目录
+│  ├─ CS-DJ_best_method/        # 基础实验合成图（single 每条一图）
+│  ├─ CS-DJ_best_method_textured/ # Texture 纹理版合成图
+│  └─ CS-DJ_best_method_subq3/  # 三子图版本（每条三图）
+│
+├─ image_embedding/             # 图像嵌入缓存
+├─ image_map/                   # 记录使用的图索引与采样映射（保证复现实验）
+│
+├─ results/                     # 主模型+安全前后审的回答结果（每类一个 JSON）
+│  └─ <strategy>/<object_model>/<category>.json
+│
+├─ eval_results/                # BeaverTails 离线评估输出（布尔或分数）
+│  └─ <strategy>/<object_model>/<category>.json
+│
+├─ beavertails/                 # 本地 BeaverTails 代码（供离线评估）
+│  ├─ moderations.py
+│  ├─ constants.py             
+│  └─ utils.py
+│
+└─ README.md
